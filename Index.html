@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clever|Login</title>
+  <style>
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 200px); /* Now 6 columns for more slots per row */
+      grid-gap: 10px;
+      padding: 20px;
+    }
+
+    .game-slot {
+      width: 200px;
+      height: 200px;
+      perspective: 600px;
+    }
+
+    .cube {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Added subtle shadow */
+    }
+
+    .face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      color: #fff;
+      background-color: #1000;
+      border: 0.5px solid #555;
+    }
+
+    .face-front {
+      transform: translateZ(50px);
+    }
+
+    .game-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+
+    .game-logo {
+      max-width: 80%;
+      max-height: 80%;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Galaxy Games (Updated versions may come. look on github page to check if you are on the newest version.)</h1>
+
+  <div class="game-grid">
+    <div class="game-slot">
+      <a href="0v0.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="0v0.png" alt="Game 1 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="1v1lol.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo.png" alt="Game 2 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="Slope.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="slope.png" alt="Game 3 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="StickmanHook.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="Stickhook.jpg" alt="Game 4 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="BadTime.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="sans.png" alt="Game 5 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="x3m.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="x3mL.jpg" alt="Game 6 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="LearnFly.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="LearnToFly.jpg" alt="Game 7 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="PolyTrack.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="polytrack.jpg" alt="Game 8 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="run3.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="run3.jpg" alt="Game 9 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game10.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo10.png" alt="Game 10 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game11.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo11.png" alt="Game 11 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game12.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo12.png" alt="Game 12 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game13.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo13.png" alt="Game 13 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game14.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo14.png" alt="Game 14 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game15.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo15.png" alt="Game 15 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game16.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo16.png" alt="Game 16 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game17.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo17.png" alt="Game 17 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game18.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo18.png" alt="Game 18 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game19.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo19.png" alt="Game 19 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game20.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo20.png" alt="Game 20 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="game-slot">
+      <a href="game21.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo21.png" alt="Game 21 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game22.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo22.png" alt="Game 22 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game23.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo23.png" alt="Game 23 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game24.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo24.png" alt="Game 24 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game25.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo25.png" alt="Game 25 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game26.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo26.png" alt="Game 26 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game27.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo27.png" alt="Game 27 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game28.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo28.png" alt="Game 28 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game29.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo29.png" alt="Game 29 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game30.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo30.png" alt="Game 30 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game31.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo31.png" alt="Game 31 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game32.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo32.png" alt="Game 32 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game33.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo33.png" alt="Game 33 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game34.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo34.png" alt="Game 34 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game35.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo35.png" alt="Game 35 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game36.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo36.png" alt="Game 36 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game37.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo37.png" alt="Game 37 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game38.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo38.png" alt="Game 38 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game39.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo39.png" alt="Game 39 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game40.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo40.png" alt="Game 40 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game41.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo41.png" alt="Game 41 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game42.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo42.png" alt="Game 42 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="game43.html" class="game-link">
+        <div class="cube">
+          <div class="face face-front">
+            <img src="logo43.png" alt="Game 43 Logo" class="game-logo">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="game-slot">
+      <a href="
